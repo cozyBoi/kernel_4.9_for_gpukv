@@ -731,8 +731,21 @@ __SYSCALL(__NR_pkey_alloc,    sys_pkey_alloc)
 #define __NR_pkey_free 290
 __SYSCALL(__NR_pkey_free,     sys_pkey_free)
 
+#define __NR_Hello 291
+__SYSCALL(__NR_Hello, sys_hello)
+#define __NR_keyopen 292
+__SYSCALL(__NR_keyopen, sys_key_open)
+#define __NR_keyclose 293
+__SYSCALL(__NR_keyclose, sys_key_close)
+#define __NR_keyop 294
+__SYSCALL(__NR_keyop, sys_key_op)
+#define __NR_keyp2pop 295
+__SYSCALL(__NR_keyp2pop, sys_key_p2p_op)
+#define __NR_keybatchop	 296
+__SYSCALL(__NR_keybatchop, sys_key_batch_op)
+
 #undef __NR_syscalls
-#define __NR_syscalls 291
+#define __NR_syscalls 297
 
 /*
  * All syscalls below here should go away really,
